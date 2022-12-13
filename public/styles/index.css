@@ -118,11 +118,15 @@ Body .sectionTop{
 body .sectionTop .topImage img{
     width: 100%;
     margin-top: 20px;
+    transition: all 150ms;
+}
+
+body .sectionTop .topImage img:hover{
+    transform: scale(1.1);
 }
 
 body .sectionBottomSlider{
     width: 100%;
-    border: 2px red dotted;
 }
 
 body .sectionBottomSlider .swiper{
@@ -151,9 +155,6 @@ body .sectionBottomSlider .swiper .swiper-button-next:hover, body .sectionBottom
 .swiper .swiper-pagination-bullet-active{
     background-color: white;
 }
-
-
-
 
 section .ulProducts{
     width: 90%;
