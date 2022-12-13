@@ -7,6 +7,10 @@ const controller = {
 
    socialMedia: (req,res) => {
       res.render("socialMedia")
+   },
+
+   pruebas:(req,res) => {
+      res.render("pruebas")
    }
 }
 
