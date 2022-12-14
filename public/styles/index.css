@@ -52,6 +52,12 @@ header nav ul li{
     list-style: none;
 }
 
+header nav ul .navBars, header nav .navBarRight{
+    display: none;
+}
+
+
+
 header nav ul a{
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
@@ -76,10 +82,13 @@ header .whoAmI a:hover{
    color: rgba(255, 255, 255, 0.9);
 }
 
+Body .navHide{
+    display: none;
+}
+
 Body .sectionTop{
     width: 100%;
-    height: 565px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .sectionTop h1{
@@ -111,7 +120,7 @@ Body .sectionTop{
 
 .topImage{
     margin-top: 30px;
-    width: 25%;
+    width: 350px;
     margin: auto;
 }
 
@@ -126,6 +135,7 @@ body .sectionTop .topImage img:hover{
 }
 
 body .sectionBottomSlider{
+    margin-top: 45px;
     width: 100%;
 }
 
@@ -196,7 +206,7 @@ section .ulProducts li img:hover{
 }
 
 body div .ulSocialMedia{
-   width: 25%;
+   width: 300px;
    margin: auto;
    margin-top: 20px;
    display: flex;
@@ -237,8 +247,6 @@ body div .ulSocialMedia .fa-linkedin:hover{
 body div .ulSocialMedia .fa-youtube:hover{
     color:rgb(255, 0, 0);
 }
-
-/* /// */
 
 body .sectionAddress{
     width: 80%;
@@ -287,6 +295,19 @@ body .loremInf{
     text-align: justify;
 }
 
+body .loremInf .bottomText{
+    margin-top: 30px;
+}
+
+body .loremInf .bottomText .bottomLinks{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: rgb(8, 105, 250);
+}
+
+
 footer{
     margin-top: 80px;
     background-color: rgba(18, 18, 18, 0.9);
@@ -299,7 +320,7 @@ body .finalLogo{
 }
 
 body .finalLogo img{
-    width: 100%;
+    width: 300px;
     opacity: 0.9;
 }
 
@@ -329,4 +350,78 @@ footer .navFooter ul li a{
 
 footer .navFooter ul li a:hover{
     color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* media quereis */
+@media (max-width: 480px) {
+    header nav .ulNavHeader{
+        display: none;
+    }
+    body .navHide{
+        background-color: rgb(18, 18, 18);
+        font-size: 15px;
+        margin-top: 60px;
+        padding-bottom: 10px;
+        margin-bottom: -60px;
+    }
+    body .navHide.active{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    header .navHide .ulNavHide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    body .navHide .ulNavHide li{
+        width: 100vw;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        transition: all 150ms;
+    }
+    body .navHide .ulNavHide li:hover{
+        background-color: rgb(66, 66, 66);
+    }
+    body header nav .navBarRight{ /* icons */
+        display: flex;
+        width: 50%;
+        height: 60px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .logo img{
+        height: 18px;
+        opacity: 0.7;
+        transition: all 150ms;
+        margin-top: 3px;
+    }
+    header nav .logo img:hover{
+        opacity: 0.9;
+    }
+    a{
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 150ms;
+    }
+    a:hover{
+        color: rgba(255, 255, 255, 0.9);
+    }
+    header li{
+        font-size: 15px;
+    }
+    body .sectionTop{
+ 
+    }
+      body div .ulSocialMedia{
+        width: 150px;
+        font-size: 25px;
+    } 
+    body .finalLogo img{
+        width: 150px;
+        opacity: 0.9;
+    }
+
 }
