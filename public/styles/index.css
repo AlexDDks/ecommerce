@@ -15,7 +15,8 @@ a{
 
 body{
     background-color: rgb(234, 234, 234);
-    max-width: 1500px;
+    max-width: 1800px;
+    min-width: 355px;
 }
 
 header{
@@ -261,11 +262,6 @@ body section .divAddress, .divDirectLine{
     color:rgba(18, 18, 18, 0.8);
 }
 
-body section .pAddress{
-    font-size: 24px;
-    font-weight: 600;
-}
-
 body section .divAddress .fa-location-dot{
     color: red;
     font-size: 20px;
@@ -358,31 +354,34 @@ footer .navFooter ul li a:hover{
     header nav .ulNavHeader{
         display: none;
     }
+    a{
+        color: rgba(255, 255, 255, 0.9);
+    }
     body .navHide{
+        width: 100%;
         background-color: rgb(18, 18, 18);
         font-size: 15px;
         margin-top: 60px;
-        padding-bottom: 10px;
-        margin-bottom: -60px;
+        margin-bottom: -70px;
     }
     body .navHide.active{
         display: flex;
-        width: 100%;
-        justify-content: center;
+        /* justify-content: center; */
     }
-    header .navHide .ulNavHide{
-        width: 100%;
+    .navHide .ulNavHide{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        border: 2px red solid;
     }
-    body .navHide .ulNavHide li{
-        width: 100vw;
+    .navHide .ulNavHide li{
+        width: 100%;
         padding: 2px;
         margin: 0;
         text-align: center;
         transition: all 150ms;
     }
-    body .navHide .ulNavHide li:hover{
+    .navHide .ulNavHide li:hover{
         background-color: rgb(66, 66, 66);
     }
     body header nav .navBarRight{ /* icons */
@@ -395,33 +394,70 @@ footer .navFooter ul li a:hover{
     }
     header nav .logo img{
         height: 18px;
-        opacity: 0.7;
-        transition: all 150ms;
+        opacity: 0.9;
         margin-top: 3px;
     }
-    header nav .logo img:hover{
-        opacity: 0.9;
+    .sectionTop h1{
+        font-size: 35px;
     }
-    a{
-        color: rgba(255, 255, 255, 0.7);
-        transition: all 150ms;
+    .sectionTop h3{
+        font-size: 24px;
     }
-    a:hover{
-        color: rgba(255, 255, 255, 0.9);
+    .sectionTop .divLearnBuy a{
+        font-size: 20px;
     }
-    header li{
-        font-size: 15px;
+    .topImage{
+        width: 280px;
     }
-    body .sectionTop{
- 
-    }
-      body div .ulSocialMedia{
+    body div .ulSocialMedia{
         width: 150px;
         font-size: 25px;
     } 
+    .sectionTop .divLearnBuy{
+        width: 60%;
+    }
+    .sectionBottomSlider .swiper{
+        margin-top: -25px;
+    }
+    .products{
+        margin-top:15px;
+    }
+    .products .ulProducts{
+        margin-top: 0;
+    }
+    .products .ulProducts li{
+        width: 40%;
+        margin-top: 20px;
+    }
+    .divSocialMedia{
+        margin-top: -15px;
+    }
+    body .sectionAddress{
+        justify-content: space-between;  
+    }
+    body section .pAddress, .pDirectLine{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    body section .divAddress, .divDirectLine{
+        width: 47.5%;
+        font-size: 16px;
+    }
+    body section .divAddress .fa-location-dot{
+        font-size: 18px;
+    }
     body .finalLogo img{
         width: 150px;
         opacity: 0.9;
+        margin:-20px 0 -20px 0;
     }
-
+    .loremInf p{
+        font-size: 13px;
+    }
+    footer nav ul li{
+    font-size: 13px;
+    }
+    footer nav ul h3{
+        font-size: 15px;
+    }
 }
