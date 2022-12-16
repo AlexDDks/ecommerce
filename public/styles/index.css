@@ -15,13 +15,13 @@ a{
 
 body{
     background-color: rgb(234, 234, 234);
-    max-width: 1800px;
+    max-width: 2200px;
     min-width: 355px;
 }
 
 header{
     width:100%;
-    max-width: 1500px; 
+    /* max-width: 1500px;  */
     background-color: rgb(18, 18, 18);
     height: 60px;
     position:fixed;
@@ -67,20 +67,6 @@ header nav ul a{
 
 header nav ul a:hover{
     color: rgba(255, 255, 255,0.9);
-}
-
-header .whoAmI a{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    right:5%;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    transition: all 150ms;
-}
-
-header .whoAmI a:hover{
-   color: rgba(255, 255, 255, 0.9);
 }
 
 Body .navHide{
@@ -254,10 +240,11 @@ body .sectionAddress{
     margin: auto;
     margin-top: 40px;
     display: flex;  
+    justify-content: space-between;
 }
 
 body section .divAddress, .divDirectLine{
-    width: 50%;
+    width: 47.5%;
     font-size: 18px;
     color:rgba(18, 18, 18, 0.8);
 }
@@ -348,9 +335,190 @@ footer .navFooter ul li a:hover{
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* MODAL: https://www.youtube.com/watch?v=kQogTrNmYpY&ab_channel=EDteam */
+.modal{
+    background-color: rgba(18, 18, 18,0.95);
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.modal p{
+    width: 80%;
+    text-align: justify;
+    position: absolute;
+    left: 10%;
+    font-size: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    color: white;
+}
+
+.openModal{
+    display: none;
+}
+
+.labelOpenModal{
+    position: fixed;
+    z-index: 11;
+    top: 3%;
+    right: 5%;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 150ms;
+}
+
+.labelOpenModal:hover{
+ color: rgba(255, 255, 255, 0.9);
+}
+
+.openModal:checked ~ .modal{
+    top:0;
+}
+
+.closeModal{
+    display: none;
+}
+
+.labelCloseModal{
+    position: absolute;
+    z-index: 150;
+    top: 3%;
+    right: 3%;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 150ms;
+}
+
+.labelCloseModal:hover{
+        color: rgba(255, 255, 255, 0.9);
+}
+
+.closeModal:checked ~ .modal{
+    top:-100vh;
+}
 
 /* media quereis */
-@media (max-width: 480px) {
+
+@media (max-width: 1023px) {
+    header nav .ulNavHeader{
+        display: none;
+    }
+    a{
+        color: rgba(255, 255, 255, 0.9);
+    }
+    body .navHide{
+        width: 100%;
+        background-color: rgb(18, 18, 18);
+        font-size: 15px;
+        margin-top: 60px;
+        margin-bottom: -70px;
+    }
+    body .navHide.active{
+        display: flex;
+    }
+    .navHide .ulNavHide{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .navHide .ulNavHide li{
+        width: 100%;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        transition: all 150ms;
+    }
+    .navHide .ulNavHide li:hover{
+        background-color: rgb(66, 66, 66);
+    }
+    body header nav .navBarRight{ /* icons */
+        display: flex;
+        width: 40%;
+        height: 60px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .logo img{
+        height: 18px;
+        opacity: 0.9;
+        margin-top: 3px;
+    }
+    .sectionTop h1{
+        font-size: 38px;
+    }
+    .sectionTop h3{
+        font-size: 26px;
+    }
+    .sectionTop .divLearnBuy a{
+        font-size: 22px;
+    }
+    .topImage{
+        width: 325px;
+    }
+    body div .ulSocialMedia{
+        width: 250px;
+        font-size: 28px;
+    } 
+    .sectionTop .divLearnBuy{
+        width: 45%;
+    }
+    .sectionBottomSlider .swiper{
+        margin-top: 30px;
+    }
+    .products .ulProducts{
+        margin-top: 60px;
+    }
+    .products .ulProducts li{
+        width: 30%;
+    }
+    section .ulProducts .productsItem1{
+        margin-top: 25px;
+    }
+    .divSocialMedia{
+        margin-top: -15px;
+    }
+    body .sectionAddress{
+        justify-content: space-between;  
+    }
+    body section .pAddress, .pDirectLine{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    body section .divAddress, .divDirectLine{
+        width: 47.5%;
+        font-size: 18px;
+    }
+    body section .divAddress .fa-location-dot{
+        font-size: 20px;
+    }
+    body .finalLogo img{
+        width: 250px;
+        opacity: 0.9;
+        margin:-10px 0 -10px 0;
+    }
+    .loremInf p{
+        font-size: 14px;
+    }
+    .bottomLinks p{
+        font-size: 16px;
+    }
+    footer nav ul li{
+    font-size: 14px;
+    }
+    footer nav ul h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
     header nav .ulNavHeader{
         display: none;
     }
@@ -410,11 +578,11 @@ footer .navFooter ul li a:hover{
         width: 280px;
     }
     body div .ulSocialMedia{
-        width: 150px;
+        width: 200px;
         font-size: 25px;
     } 
     .sectionTop .divLearnBuy{
-        width: 60%;
+        width: 50%;
     }
     .sectionBottomSlider .swiper{
         margin-top: -25px;
@@ -447,7 +615,7 @@ footer .navFooter ul li a:hover{
         font-size: 18px;
     }
     body .finalLogo img{
-        width: 150px;
+        width: 200px;
         opacity: 0.9;
         margin:-20px 0 -20px 0;
     }
