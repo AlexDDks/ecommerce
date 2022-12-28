@@ -80,37 +80,80 @@ body .navHide{
 body .products{
     width: 90%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 2px red dotted;
 }
 
 body section .productBox{
-    width: 28%;
+    width: 22%;
     margin-top: 30px;
-    border: 2px rgb(0, 26, 255) solid;
     transition: all 150ms;
     overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 8px 3px rgba(47, 47, 47, 0.6);
+    border: 2px rgba(47, 47, 47, 0.6) solid;
+    border-radius: 5px;
 }
 
-body section .productBox:hover{
-    box-shadow: 0 0 8px 3px rgba(47, 47, 47, 0.6);
+body section .productBox h2{
+    color:rgba(18, 18, 18, 0.9);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+body section .productBox span{
+    color:rgba(18, 18, 18, 0.9);
+    font-size: 20px;
+    font-weight: 400;
 }
 
 img{
     width: 100%;
 }
 
-body section article .pName{
+body section article .productInfo{
+    margin-left: 5px;
+}
+
+body section article div .pName{
+    color:rgba(18, 18, 18, 0.9);
+    font-size: 17px;
+    font-weight: 300;
     height: 0;
     transition: all 250ms;
-}
+    }
+
+body section .productBox:hover{
+    transform: scale(1.025);
+} 
 
 body section .productBox:hover .pName{
     height: 40px;
     margin-top: 15px;
+}
+
+body section .productBox i{
+    font-size: 20px;
+    color:rgba(18, 18, 18, 0.9);
+    transition: all 350ms;
+    position: absolute;
+    top: 245px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+
+}
+
+body section .productBox:hover i{
+    transform: rotate(360deg);
 }
 
 
@@ -283,6 +326,62 @@ footer .navFooter ul li a:hover{
         opacity: 0.9;
         margin-top: 3px;
     }
+
+    
+       body section .productBox{
+        width: 30%;
+    }
+    
+    body section .productBox h2{
+        color:rgba(18, 18, 18, 0.9);
+        font-size: 23px;
+    }
+    
+    body section .productBox span{
+        color:rgba(18, 18, 18, 0.9);
+        font-size: 18px;
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    body section article .productInfo{
+        margin-left: 5px;
+    }
+    
+    body section article div .pName{
+        color:rgba(18, 18, 18, 0.9);
+        font-size: 15px;
+        }
+    
+    body section .productBox:hover{
+        transform: scale(1.025);
+    } 
+    
+    body section .productBox:hover .pName{
+        height: 40px;
+        margin-top: 15px;
+    }
+    
+    body section .productBox i{
+        font-size: 18px;
+        color:rgba(18, 18, 18, 0.9);
+        transition: all 350ms;
+        position: absolute;
+        top: 245px;
+        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: solid 1px;
+        border-radius: 50%;
+    
+    }
+
     body .finalLogo img{
         width: 250px;
         opacity: 0.9;
@@ -302,9 +401,6 @@ footer .navFooter ul li a:hover{
     @media (max-width: 767px) {
         header nav .ulNavHeader{
             display: none;
-        }
-        a{
-            color: rgba(255, 255, 255, 0.9);
         }
         body .navHide{
             width: 100%;
@@ -345,7 +441,59 @@ footer .navFooter ul li a:hover{
             opacity: 0.9;
             margin-top: 3px;
         }
-        body .finalLogo img{
+
+
+       body section .productBox{
+        width: 45%;
+    }
+    
+    body section .productBox h2{
+        color:rgba(18, 18, 18, 0.9);
+        font-size: 23px;
+    }
+    
+    body section .productBox span{
+        color:rgba(18, 18, 18, 0.9);
+        font-size: 18px;
+    }
+
+    body section article .productInfo{
+        margin-left: 5px;
+    }
+    
+    body section article div .pName{
+        color:rgba(18, 18, 18, 0.9);
+        font-size: 15px;
+        }
+    
+    body section .productBox:hover{
+        transform: scale(1.025);
+    } 
+    
+    body section .productBox:hover .pName{
+        height: 40px;
+        margin-top: 15px;
+    }
+    
+    body section .productBox i{
+        font-size: 18px;
+        color:rgba(18, 18, 18, 0.9);
+        transition: all 350ms;
+        position: absolute;
+        top: 245px;
+        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: solid 1px;
+        border-radius: 50%;
+    
+    }
+    
+       body .finalLogo img{
             width: 200px;
             opacity: 0.9;
             margin:-20px 0 -20px 0;
