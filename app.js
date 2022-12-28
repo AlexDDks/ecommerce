@@ -19,14 +19,14 @@ app.use(methodOverride('_method'))
 
 // Routes
 const mainRouter = require("./routes/mainRouter")
-// const usersRouter = require("./routes/usersRouter")
-// const productsRouter = require("./routes/productsRouter")
+const usersRouter = require("./routes/usersRouter")
+const productsRouter = require("./routes/productsRouter")
 // const servicesRouter = require("./routes/servicesRouter")
 
 // Paths
 app.use("/", mainRouter)
-// app.use("/users", usersRouter)
-// app.use("/products", productsRouter)
+app.use("/users", usersRouter)
+app.use("/products", productsRouter)
 // app.use("/services", servicesRouter)
 
 // 404 error set

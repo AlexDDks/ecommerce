@@ -11,79 +11,23 @@
     
 </head>
 <body>
-    <header>
-        <nav class="navHeader">
-            <ul class="ulNavHeader">
-                <li><div class="logo">
-                    <img src="/img/logoWhite.png" alt="logo">
-                    </div>
-                </li>     
-                <li class="navItem"><a href="#">Smartphone</a></li>
-                <li class="navItem"><a href="#">Laptop/PC</a></li>  
-                <li class="navItem"><a href="#">Headphone</a></li> 
-                <li class="navItem"><a href="#">Tv</a></li> 
-                <li class="navItem"><a href="#">Camera</a></li> 
-                <li class="navItem"><a href="#">Smart Watch</a></li> 
-                <li class="navItem"><a href="#">Smart House</a></li> 
-                <li class="navItem"><a href="#">Gaming</a></li> 
-                <li class="navItem"><a href="#">Accesories</a></li> 
-                <li class="navItem"><a href="#">Offers</a></li> 
-                <li class="navItem"><a href="#">Support</a></li> 
-                <li class="navItem"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> 
-                <li class="navItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li> 
-                <li class="navItem"><a href="#"><i class="fa-solid fa-user"></i></a></li>
-            </ul>  
-
-            <div class="navBarRight">
-                <li><div class="logo">
-                    <img src="/img/logoWhite.png" alt="logo">
-                    </div>
-                </li> 
-                <li class="navBars"><a href="#" class="aBurgerButton"><i class="fa-solid fa-bars"></i></a></li> 
-                <li class="navItem"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> 
-                <li class="navItem"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li> 
-                <li class="navItem"><a href="#"><i class="fa-solid fa-user"></i></a></li> 
-            </div>
-        </nav>   
-       
-    </header>
-
-    <div class="navHide">
-        <ul class="ulNavHide">
-            <li class="navItem"><a href="#">Smartphone</a></li>
-            <li class="navItem"><a href="#">Laptop/PC</a></li>  
-            <li class="navItem"><a href="#">Headphone</a></li> 
-            <li class="navItem"><a href="#">Tv</a></li> 
-            <li class="navItem"><a href="#">Camera</a></li> 
-            <li class="navItem"><a href="#">Smart Watch</a></li> 
-            <li class="navItem"><a href="#">Smart House</a></li> 
-            <li class="navItem"><a href="#">Gaming</a></li> 
-            <li class="navItem"><a href="#">Accesories</a></li> 
-            <li class="navItem"><a href="#">Offers</a></li> 
-            <li class="navItem"><a href="#">Support</a></li> 
-        </ul>
-    </div>
+    
+    <%- include('partials/header.ejs')%>
 
     <section class="sectionTop">
                     <h1> The new One</h1>
                     <h3>Faster and more Powerful!</h3>
                     <div class="divLearnBuy">
-                        <a href="#">Learn more ></a>
-                        <a href="#">Buy ></a>
+                        <a href="/products">Learn more ></a>
+                        <a href="/products/shoppingcar">Buy ></a>
                     </div>         
                     <div class="topImage">
                         <a href="#"><img src="/img/products/sliderTop/pcGamer.png" alt=""></a>
                     </div>
     </section>
 
-
-        <!-- Slider top -->
-    
-       <!-- Slider top ends --> 
-
-
     </section>
-    <!-- slider bottom -->
+    <!-- slider-->
     <section class="sectionBottomSlider">
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -110,15 +54,15 @@
 
     <section class="products">
         <ul class="ulProducts">
-            <li class="productsItem"><a href="/#"><img src="/img/products/smartphone.png" alt=""></a></li>
-            <li class="productsItem"><a href="/#"><img src="/img/products/laptops.png" alt=""></a></li>
-            <li class="productsItem"><a href="/#"><img src="/img/products/headphones.png" alt=""></a></li>
-            <li class="productsItem1"><a href="/#"><img src="/img/products/tvs.png" alt=""></a></li>
-            <li class="productsItem1"><a href="/#"><img src="/img/products/cameras.png" alt=""></a></li>
-            <li class="productsItem1"><a href="/#"><img src="/img/products/smartWatches.png" alt=""></a></li>
-            <li class="productsItem1"><a href="/#"><img src="/img/products/smartHouses.png" alt=""></a></li>
-            <li class="productsItem1"><a href="/#"><img src="/img/products/gaming.png" alt=""></a></li>
-            <li class="productsItem1"><a href="/#"><img src="/img/products/accesories.png" alt=""></a></li>
+            <li class="productsItem"><a href="/products"><img src="/img/products/smartphone.png" alt=""></a></li>
+            <li class="productsItem"><a href="/products"><img src="/img/products/laptops.png" alt=""></a></li>
+            <li class="productsItem"><a href="/products"><img src="/img/products/headphones.png" alt=""></a></li>
+            <li class="productsItem1"><a href="/products"><img src="/img/products/tvs.png" alt=""></a></li>
+            <li class="productsItem1"><a href="/products"><img src="/img/products/cameras.png" alt=""></a></li>
+            <li class="productsItem1"><a href="/products"><img src="/img/products/smartWatches.png" alt=""></a></li>
+            <li class="productsItem1"><a href="/products"><img src="/img/products/smartHouses.png" alt=""></a></li>
+            <li class="productsItem1"><a href="/products"><img src="/img/products/gaming.png" alt=""></a></li>
+            <li class="productsItem1"><a href="/products"><img src="/img/products/accesories.png" alt=""></a></li>
         </ul>
     </section>
 
@@ -169,74 +113,13 @@
     <div class="finalLogo">
         <img src="/img/logoBlack.png" alt="">
     </div>
+        
+    <%- include('partials/footer.ejs')%>
 
-    <footer>
-        <nav class="navFooter">
-            <ul>
-                <li><h3>A</h3></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-            </ul>
-
-            <ul>
-                <li><h3>B</h3></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-            </ul>
-
-            <ul>
-                <li><h3>D</h3></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-            </ul>
-
-            <ul>
-                <li><h3>D</h3></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-            </ul>
-
-            <ul>
-                <li><h3>E</h3></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-            </ul>
-        </nav>
-    </footer>
-
-
-            <input class="openModal" type="radio" name="modal" id="openModal">
-            <label class="labelOpenModal" for="openModal">who I am?</label> 
-            <input class="closeModal" type="radio" name="modal" id="closeModal">
-            
-            <div class="modal" id="modal">
-                <label class="labelCloseModal" for="closeModal"><i class="fa-solid fa-xmark"></i></label>
-           <p>
-            
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dolorem odio amet quas aut illo nostrum reiciendis, nihil, nesciunt magnam voluptatibus, reprehenderit sequi quos. Eligendi totam ipsum est accusamus. Cupiditate libero natus, blanditiis accusantium illo maiores? Culpa iste numquam, quam amet placeat veritatis vero sit officia quos exercitationem, quaerat delectus.</p>
-           
-        </div>
-
-
+    <%- include('partials/modal.ejs')%>
 
     <script src="/js/burger.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/swiper.js"></script>
-  <!-- QUEDA PENDIENTE MANDAR EL NUEVO DIV DEL NAV QUE APARECERÁ A LA POSICIÓN DONDE QUEREMOS! -->
     </body>
     </html>

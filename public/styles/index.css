@@ -58,7 +58,6 @@ header nav ul .navBars, header nav .navBarRight{
 }
 
 
-
 header nav ul a{
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
@@ -347,6 +346,14 @@ footer .navFooter ul li a:hover{
     transition: all 0.5s;
 }
 
+.modal h2{
+text-align: center;
+margin-top: 130px;
+color: white;
+font-size: 28px;
+font-weight: 400;
+}
+
 .modal p{
     width: 80%;
     text-align: justify;
@@ -540,7 +547,6 @@ footer .navFooter ul li a:hover{
         display: flex;
         flex-direction: column;
         width: 100%;
-        border: 2px red solid;
     }
     .navHide .ulNavHide li{
         width: 100%;

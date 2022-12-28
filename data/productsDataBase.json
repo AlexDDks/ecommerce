@@ -1,0 +1,110 @@
+[
+    {
+     "id": 1,
+     "name": "Cellphone 1",
+     "price": 5000,
+     "discount": 3,
+     "category": "smartphone",
+     "description": "Smartphon1, the best",
+     "image": "smartphone.png"
+    },
+    {
+     "id": 2,
+     "name": "Laptop 1",
+     "price": 12000,
+     "discount": 5,
+     "category": "laptop",
+     "description": "Laptop 1",
+     "image": "laptop.png"
+    },
+    {
+     "id": 3,
+     "name": "Cellphone 1",
+     "price": 5000,
+     "discount": 3,
+     "category": "smartphone",
+     "description": "Smartphon1, the best",
+     "image": "smartphone.png"
+    },
+    {
+     "id": 4,
+     "name": "Laptop 1",
+     "price": 12000,
+     "discount": 5,
+     "category": "laptop",
+     "description": "Laptop 1",
+     "image": "laptop.png"
+    },
+    {
+     "id": 5,
+     "name": "Cellphone 1",
+     "price": 5000,
+     "discount": 3,
+     "category": "smartphone",
+     "description": "Smartphon1, the best",
+     "image": "smartphone.png"
+    },
+    {
+     "id": 6,
+     "name": "Laptop 1",
+     "price": 12000,
+     "discount": 5,
+     "category": "laptop",
+     "description": "Laptop 1",
+     "image": "laptop.png"
+    },
+    {
+     "id": 7,
+     "name": "Cellphone 1",
+     "price": 5000,
+     "discount": 3,
+     "category": "smartphone",
+     "description": "Smartphon1, the best",
+     "image": "smartphone.png"
+    },
+    {
+     "id": 8,
+     "name": "Laptop 1",
+     "price": 12000,
+     "discount": 5,
+     "category": "laptop",
+     "description": "Laptop 1",
+     "image": "laptop.png"
+    },
+    {
+     "id": 9,
+     "name": "Cellphone 1",
+     "price": 5000,
+     "discount": 3,
+     "category": "smartphone",
+     "description": "Smartphon1, the best",
+     "image": "smartphone.png"
+    },
+    {
+     "id": 10,
+     "name": "Laptop 1",
+     "price": 12000,
+     "discount": 5,
+     "category": "laptop",
+     "description": "Laptop 1",
+     "image": "laptop.png"
+    },
+    {
+        "id": 11,
+        "name": "Cellphone 1",
+        "price": 5000,
+        "discount": 3,
+        "category": "smartphone",
+        "description": "Smartphon1, the best",
+        "image": "smartphone.png"
+       },
+       {
+        "id": 12,
+        "name": "Laptop 1",
+        "price": 12000,
+        "discount": 5,
+        "category": "laptop",
+        "description": "Laptop 1",
+        "image": "laptop.png"
+       }
+]
