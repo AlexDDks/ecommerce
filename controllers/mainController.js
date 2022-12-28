@@ -9,6 +9,10 @@ const controller = {
       res.render("socialMedia")
    },
 
+   contact:(req,res) => {
+      res.render("contact")
+   },
+
    pruebas:(req,res) => {
       res.render("pruebas")
    }
