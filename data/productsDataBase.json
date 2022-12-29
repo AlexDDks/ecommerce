@@ -1,110 +1,102 @@
 [
-    {
-     "id": 1,
-     "name": "Cellphone 1",
-     "price": 5000,
-     "discount": 3,
-     "category": "smartphone",
-     "description": "Smartphon1, the best",
-     "image": "smartphone.png"
-    },
-    {
-     "id": 2,
-     "name": "Laptop 1",
-     "price": 12000,
-     "discount": 5,
-     "category": "laptop",
-     "description": "Laptop 1",
-     "image": "laptop.png"
-    },
-    {
-     "id": 3,
-     "name": "Cellphone 1",
-     "price": 5000,
-     "discount": 3,
-     "category": "smartphone",
-     "description": "Smartphon1, the best",
-     "image": "smartphone.png"
-    },
-    {
-     "id": 4,
-     "name": "Laptop 1",
-     "price": 12000,
-     "discount": 5,
-     "category": "laptop",
-     "description": "Laptop 1",
-     "image": "laptop.png"
-    },
-    {
-     "id": 5,
-     "name": "Cellphone 1",
-     "price": 5000,
-     "discount": 3,
-     "category": "smartphone",
-     "description": "Smartphon1, the best",
-     "image": "smartphone.png"
-    },
-    {
-     "id": 6,
-     "name": "Laptop 1",
-     "price": 12000,
-     "discount": 5,
-     "category": "laptop",
-     "description": "Laptop 1",
-     "image": "laptop.png"
-    },
-    {
-     "id": 7,
-     "name": "Cellphone 1",
-     "price": 5000,
-     "discount": 3,
-     "category": "smartphone",
-     "description": "Smartphon1, the best",
-     "image": "smartphone.png"
-    },
-    {
-     "id": 8,
-     "name": "Laptop 1",
-     "price": 12000,
-     "discount": 5,
-     "category": "laptop",
-     "description": "Laptop 1",
-     "image": "laptop.png"
-    },
-    {
-     "id": 9,
-     "name": "Cellphone 1",
-     "price": 5000,
-     "discount": 3,
-     "category": "smartphone",
-     "description": "Smartphon1, the best",
-     "image": "smartphone.png"
-    },
-    {
-     "id": 10,
-     "name": "Laptop 1",
-     "price": 12000,
-     "discount": 5,
-     "category": "laptop",
-     "description": "Laptop 1",
-     "image": "laptop.png"
-    },
-    {
-        "id": 11,
-        "name": "Cellphone 1",
-        "price": 5000,
-        "discount": 3,
-        "category": "smartphone",
-        "description": "Smartphon1, the best",
-        "image": "smartphone.png"
-       },
-       {
-        "id": 12,
-        "name": "Laptop 1",
-        "price": 12000,
-        "discount": 5,
-        "category": "laptop",
-        "description": "Laptop 1",
-        "image": "laptop.png"
-       }
+ {
+  "id": 1,
+  "name": "Cellphone 1",
+  "price": 5000,
+  "msi": 12,
+  "discount": 3,
+  "description": "Smartphone, the best",
+  "image": "smartphone.png"
+ },
+ {
+  "id": "2",
+  "name": "Laptop 2",
+  "price": "12000",
+  "discount": "5",
+  "msi": "6",
+  "description": "Prueba",
+  "image": "laptop.png"
+ },
+ {
+  "id": 3,
+  "name": "Cellphone 2",
+  "price": 5000,
+  "msi": 3,
+  "discount": 3,
+  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "smartphone.png"
+ },
+ {
+  "id": 4,
+  "name": "Laptop 2",
+  "price": 12000,
+  "msi": 12,
+  "discount": 5,
+  "description": "Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "laptop.png"
+ },
+ {
+  "id": 5,
+  "name": "Cellphone 3",
+  "price": 5000,
+  "msi": 12,
+  "discount": 3,
+  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "smartphone.png"
+ },
+ {
+  "id": 6,
+  "name": "Laptop 3",
+  "price": 12000,
+  "msi": 6,
+  "discount": 5,
+  "description": "Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "laptop.png"
+ },
+ {
+  "id": 7,
+  "name": "Cellphone 4",
+  "price": 5000,
+  "msi": 12,
+  "discount": 3,
+  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "smartphone.png"
+ },
+ {
+  "id": 8,
+  "name": "Laptop 4",
+  "price": 12000,
+  "msi": 6,
+  "discount": 5,
+  "description": "Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "laptop.png"
+ },
+ {
+  "id": 9,
+  "name": "Cellphone 5",
+  "price": 5000,
+  "msi": 3,
+  "discount": 3,
+  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "smartphone.png"
+ },
+ {
+  "id": 10,
+  "name": "Laptop 5",
+  "price": 12000,
+  "msi": 12,
+  "discount": 5,
+  "description": "Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "laptop.png",
+  "finalPrice": 11400
+ },
+ {
+  "id": 11,
+  "name": "Cellphone 6",
+  "price": 5000,
+  "msi": 12,
+  "discount": 3,
+  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "image": "smartphone.png"
+ }
 ]

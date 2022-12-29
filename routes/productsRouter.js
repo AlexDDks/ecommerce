@@ -1,9 +1,46 @@
-const express = require("express") //We required the framework Express in order to use all its methods
-const router = express.Router() //We executed the Router method, saving its properties in the const router
+const express = require("express") 
+const router = express.Router() 
+const path = require('path');
+const multer = require('multer');
 
-const productsController=require("../controllers/productsController") //We required the module that we have already export in the main controller
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+    cb(null, path.join(__dirname, '../public/img/products/selectProducts'))
+  },
 
-router.get("/",productsController.products) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie
-router.get("/shoppingcar",productsController.shoppingCar) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie
+  filename: function (req, file, cb) {
+    const nombre = file.originalname
+    let idx = -1
+    for (let i = nombre.length - 1; i >= 0; i--) {
+      const char = nombre[i]
+      if (char === '.') {
+        idx = i
+        break;
+      }
+    }  
+    const name = nombre.slice(0, idx)
+    const ext = file.mimetype.split['/']
+    cb(null, file.fieldname + '-' + Date.now())
+  }
+})
 
-module.exports=router //We must export the variable router in order of being required in the entry point paths
+const productsController=require("../controllers/productsController") 
+
+// Get
+router.get("/",productsController.products) 
+router.get("/create",productsController.createForm) 
+router.get("/shoppingcar",productsController.shoppingCar)
+router.get("/detail/:id",productsController.detail)
+router.get("/edit/:id",productsController.editForm) 
+
+// Post
+const upload = multer({ storage })
+router.post('/create', upload.single('image'), productsController.createStore);
+
+// Put
+router.put('/edit/:id', productsController.editUpdate);
+
+// Delete
+router.delete('/delete/:id', productsController.delete);
+
+module.exports=router 
