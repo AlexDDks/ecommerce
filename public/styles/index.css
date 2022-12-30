@@ -21,7 +21,6 @@ body{
 
 header{
     width:100%;
-    /* max-width: 1500px;  */
     background-color: rgb(18, 18, 18);
     height: 60px;
     position:fixed;
@@ -57,7 +56,6 @@ header nav ul .navBars, header nav .navBarRight{
     display: none;
 }
 
-
 header nav ul a{
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
@@ -72,6 +70,7 @@ Body .navHide{
     display: none;
 }
 
+/* Section */
 Body .sectionTop{
     width: 100%;
     margin-top: 80px;
@@ -132,7 +131,6 @@ body .sectionBottomSlider .swiper{
 
 body .sectionBottomSlider .swiper img{
     width: 100%;
-
 }
 
 body .sectionBottomSlider .swiper .swiper-button-next, body .sectionBottomSlider .swiper .swiper-button-prev{
@@ -178,11 +176,6 @@ section .ulProducts li img:hover{
     box-shadow: 0 0 8px 3px rgba(47, 47, 47, 0.6);
 }
 
-/* body .divSocialMedia{
-    width: 40%;
-    margin: auto;
-} */
-
 .h3FollowUs{
     color:rgba(18, 18, 18, 0.9);
     margin-top: 40px;
@@ -201,7 +194,6 @@ body div .ulSocialMedia{
 }
 
 /* Hovers social media icons */
-
 body div .ulSocialMedia .fa-facebook{
     color:rgba(66, 103, 178, 0.8);
 }
@@ -286,24 +278,23 @@ body .loremInf .bottomText .bottomLinks{
     display: flex;
     flex-direction: column;
     font-weight: 500;
+}
+
+.bottomLinks a{
     color: rgb(8, 105, 250);
 }
 
+body .finalLogo img{
+    margin-left: 5%;
+    margin-top: 60px;
+    width: 300px;
+    opacity: 0.9;
+}
 
+/* footer */
 footer{
     margin-top: 80px;
     background-color: rgba(18, 18, 18, 0.9);
-}
-
-body .finalLogo{
-    width:20%;
-    margin-left: 5%;
-    margin-top: 60px;
-}
-
-body .finalLogo img{
-    width: 300px;
-    opacity: 0.9;
 }
 
 footer nav {
@@ -337,6 +328,8 @@ footer .navFooter ul li a:hover{
 /* media quereis */
 
 @media (max-width: 1023px) {
+
+    /* Header */
     header nav .ulNavHeader{
         display: none;
     }
@@ -369,7 +362,7 @@ footer .navFooter ul li a:hover{
     .navHide .ulNavHide li:hover{
         background-color: rgb(66, 66, 66);
     }
-    body header nav .navBarRight{ /* icons */
+    body header nav .navBarRight{
         display: flex;
         width: 40%;
         height: 60px;
@@ -382,6 +375,8 @@ footer .navFooter ul li a:hover{
         opacity: 0.9;
         margin-top: 3px;
     }
+
+    /* Section */
     .sectionTop h1{
         font-size: 38px;
     }
@@ -430,17 +425,22 @@ footer .navFooter ul li a:hover{
     body section .divAddress .fa-location-dot{
         font-size: 20px;
     }
-    body .finalLogo img{
-        width: 250px;
-        opacity: 0.9;
-        margin:-10px 0 -10px 0;
-    }
+
     .loremInf p{
         font-size: 14px;
     }
     .bottomLinks p{
         font-size: 16px;
     }
+    
+    body .finalLogo img{
+        margin-left: 5%;
+        margin-top: 50px;
+        width: 250px;
+        opacity: 0.9;
+    }
+
+    /* Footer */
     footer nav ul li{
     font-size: 14px;
     }
@@ -450,51 +450,13 @@ footer .navFooter ul li a:hover{
 }
 
 @media (max-width: 767px) {
-    header nav .ulNavHeader{
-        display: none;
-    }
-    a{
-        color: rgba(255, 255, 255, 0.9);
-    }
-    body .navHide{
-        width: 100%;
-        background-color: rgb(18, 18, 18);
-        font-size: 15px;
-        margin-top: 60px;
-        margin-bottom: -70px;
-    }
-    body .navHide.active{
-        display: flex;
-        /* justify-content: center; */
-    }
-    .navHide .ulNavHide{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .navHide .ulNavHide li{
-        width: 100%;
-        padding: 2px;
-        margin: 0;
-        text-align: center;
-        transition: all 150ms;
-    }
-    .navHide .ulNavHide li:hover{
-        background-color: rgb(66, 66, 66);
-    }
+
+    /* Header */
     body header nav .navBarRight{ /* icons */
-        display: flex;
         width: 50%;
-        height: 60px;
-        margin: auto;
-        justify-content: space-evenly;
-        align-items: center;
     }
-    header nav .logo img{
-        height: 18px;
-        opacity: 0.9;
-        margin-top: 3px;
-    }
+
+    /* Section */
     .sectionTop h1{
         font-size: 35px;
     }
@@ -544,14 +506,18 @@ footer .navFooter ul li a:hover{
     body section .divAddress .fa-location-dot{
         font-size: 18px;
     }
+
     body .finalLogo img{
+        margin-left: 5%;
+        margin-top: 40px;
         width: 200px;
         opacity: 0.9;
-        margin:-20px 0 -20px 0;
     }
     .loremInf p{
         font-size: 13px;
     }
+
+    /* Footer */
     footer nav ul li{
     font-size: 13px;
     }

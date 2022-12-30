@@ -25,9 +25,9 @@ body{
     min-width: 355px;
 }
 
+/* Header */
 header{
     width:100%;
-    /* max-width: 1500px;  */
     background-color: rgb(18, 18, 18);
     height: 60px;
     position:fixed;
@@ -99,7 +99,6 @@ form img{
     top:10px;
 }
 
-
 form h2{
     margin-top: -10px;
     font-weight: 500;
@@ -115,11 +114,6 @@ form a{
     color: black;
 }
 
-footer{
-    margin-top: 80px;
-    background-color: rgba(18, 18, 18, 0.9);
-}
-
 body .finalLogo{
     width:20%;
     margin-left: 5%;
@@ -129,6 +123,12 @@ body .finalLogo{
 body .finalLogo img{
     width: 300px;
     opacity: 0.9;
+}
+
+/* Footer */
+footer{
+    margin-top: 80px;
+    background-color: rgba(18, 18, 18, 0.9);
 }
 
 footer nav {
@@ -162,6 +162,7 @@ footer .navFooter ul li a:hover{
 /* media quereis */
 
 @media (max-width: 1023px) {
+    /* Header */
     header nav .ulNavHeader{
         display: none;
     }

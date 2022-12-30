@@ -6,6 +6,7 @@ const mainController=require("../controllers/mainController") //We required the 
 router.get("/",mainController.index) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie
 router.get("/socialMedia",mainController.socialMedia) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie
 router.get("/contact",mainController.contact) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie
+router.get("/personalcontact",mainController.personalContact) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie
 
 
 router.get("/pruebas",mainController.pruebas) //By the const router, all the requirements by the clients to this will be send to the controller and its propertie

@@ -190,14 +190,13 @@ body section .productInfo .buttonEdit, .buttonDelete{
     color: white;
     font-size: 28px;
     background-color: rgb(255, 0, 0, 0.6);
+    border: 0;
     border-radius: 10px;
-    border:rgb(234, 234, 234) 2px solid;
     cursor: pointer;
 }
 
 body section .productInfo .buttonEdit{
     background-color: rgb(255, 165, 0, 0.6);
-    border:rgb(234, 234, 234) 2px solid;
     cursor: pointer;
 }
 
@@ -207,10 +206,9 @@ body section article .actionButton{
 
 body section article .productDescription{
     margin: 0 5px 0 0;
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
 }
-
 
 /* Footer */
 footer{
@@ -255,4 +253,169 @@ footer .navFooter ul li a{
 
 footer .navFooter ul li a:hover{
     color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1023px) {
+    /* Header */
+    header nav .ulNavHeader{
+        display: none;
+    }
+     a{
+        color: rgba(255, 255, 255, 0.9);
+    }
+    body .navHide{
+        width: 100%;
+        background-color: rgb(18, 18, 18);
+        font-size: 15px;
+        margin-top: 60px;
+        margin-bottom: -70px;
+    }
+    body .navHide.active{
+        display: flex;
+    }
+    .navHide .ulNavHide{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .navHide .ulNavHide li{
+        width: 100%;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        transition: all 150ms;
+    }
+    .navHide .ulNavHide li:hover{
+        background-color: rgb(66, 66, 66);
+    }
+    body header nav .navBarRight{
+        display: flex;
+        width: 40%;
+        height: 60px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .logo img{
+        height: 18px;
+        opacity: 0.9;
+        margin-top: 3px;
+    }
+
+    /* Section */
+    body section .productInfo{
+        height: 500px;
+    }
+    
+    body section .productInfo .pName{
+        font-size: 40px;
+    }
+    
+    body section .productInfo .spanPrice, .spanDiscount{
+        font-size: 22px;    
+    }
+    
+    body section .productInfo .pFinalPrice{
+        font-size: 38px;
+    }
+    
+    body section .productInfo .infoBottom{
+        font-size: 21px;
+        padding-right: 5px;
+    }
+    
+    body section .productInfo .buttonBuy{
+        height: 50px;
+    }
+    
+    body section .productInfo .buttonBuy p{
+        font-size: 29px;
+    }
+    
+    body section .productInfo .buttonEdit, .buttonDelete{
+        font-size: 21px;
+    }
+    
+    body section article .actionButton{
+        margin: 0 5px 20px 0
+    }
+    
+    body section article .productDescription{
+        font-size: 18px;
+    }
+    
+    /* Footer */
+    footer nav ul li{
+        font-size: 14px;
+    }
+    footer nav ul h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    /* Header */
+    body header nav .navBarRight{ /* icons */
+        width: 50%;
+    }
+      /* Section */
+
+    body section .article{
+        width: 100%;
+    }
+    
+    body section .divImage{
+        width: 50%;
+    }
+      body section .productInfo{
+        width: 48%;
+        height: 400px;
+        }
+    
+    body section .productInfo .pName{
+        font-size: 30px;
+    }
+    
+    body section .productInfo .spanPrice, .spanDiscount{
+        font-size: 19px;    
+    }
+    
+    body section .productInfo .pFinalPrice{
+        font-size: 30px;
+    }
+    
+    body section .productInfo .infoBottom{
+        font-size: 19px;
+        padding-right: 5px;
+    }
+    
+    body section .productInfo .buttonBuy{
+        height: 40px;
+    }
+    
+    body section .productInfo .buttonBuy p{
+        font-size: 26px;
+    }
+    
+    body section .productInfo .buttonEdit, .buttonDelete{
+        font-size: 19px;
+    }
+    
+    body section article .actionButton{
+        margin: 0 5px 10px 0
+    }
+    
+    body section article .productDescription{
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer nav ul li{
+        font-size: 13px;
+    }
+    footer nav ul h3{
+        font-size: 15px;
+    }
 }

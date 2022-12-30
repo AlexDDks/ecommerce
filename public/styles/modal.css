@@ -52,11 +52,12 @@ font-weight: 400;
 .labelOpenModal{
     position: fixed;
     z-index: 11;
-    top: 3%;
-    right: 5%;
-    font-size: 12px;
+    top: 21px;
+    right: 40px; 
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
     transition: all 150ms;
+    cursor: pointer;
 }
 
 .labelOpenModal:hover{

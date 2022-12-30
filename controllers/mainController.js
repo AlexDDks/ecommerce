@@ -13,6 +13,11 @@ const controller = {
       res.render("contact")
    },
 
+   personalContact:(req,res) => {
+      res.render("personalContact")
+   },
+
+
    pruebas:(req,res) => {
       res.render("pruebas")
    }

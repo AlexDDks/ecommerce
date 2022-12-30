@@ -10,11 +10,11 @@
  },
  {
   "id": "2",
-  "name": "Laptop 2",
+  "name": "Laptop prueba",
   "price": "12000",
-  "discount": "5",
-  "msi": "6",
-  "description": "Prueba",
+  "discount": "4",
+  "msi": "12",
+  "description": "Esta es una prueba 30 dic 2022 : 4:06 PM",
   "image": "laptop.png"
  },
  {
@@ -24,7 +24,8 @@
   "msi": 3,
   "discount": 3,
   "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  "image": "smartphone.png"
+  "image": "smartphone.png",
+  "finalPrice": 4850
  },
  {
   "id": 4,

@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI';
+}
+
+body{
+    background-color: rgb(234, 234, 234);
+    max-width: 2200px;
+    min-width: 355px;
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(234, 234, 234);
+    max-width: 2200px;
+    min-width: 355px;
+}
+
+/* Header */
+header{
+    width:100%;
+    background-color: rgb(18, 18, 18);
+    height: 60px;
+    position:fixed;
+    z-index: 10;
+    top: 0;
+}
+
+header .navHeader{
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul img{
+    height: 25px;
+    opacity: .8;
+}
+
+header nav .ulNavHeader{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li{
+    font-size: 12px;
+    list-style: none;
+}
+
+header nav ul .navBars, header nav .navBarRight{
+    display: none;
+}
+
+header nav ul a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 150ms;
+}
+
+header nav ul a:hover{
+    color: rgba(255, 255, 255,0.9);
+}
+
+Body .navHide{
+    display: none;
+}
+
+/* contact */
+body section{
+    margin: 105px auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+body section .divInfo{
+    width: 500px;
+    height: 50px;
+    margin: 15px 0 0 0;
+    border-radius: 5px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms;
+}
+
+body section .divInfo:hover{
+   transform: scale(1.025);
+}
+
+body section div p{
+    color: white;
+    font-size: 22px;
+}
+
+body section .divIcons{
+    display: flex;
+    margin-top: 15px;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+body section .divIcons i{
+    font-size: 45px;
+    color: rgb(18, 18, 18);
+    transition: all 150ms;
+}
+
+body section .divIcons i:hover{
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+footer{
+    margin-top: 60px;
+    background-color: rgba(18, 18, 18, 0.9);
+}
+
+body .finalLogo{
+    width:20%;
+    margin-left: 5%;
+    margin-top: 60px;
+}
+
+body .finalLogo img{
+    width: 300px;
+    opacity: 0.9;
+}
+
+footer nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+}
+
+footer h3{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+    text-align: center;
+}
+
+footer .navFooter ul li{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+footer .navFooter ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 150ms;
+}
+
+footer .navFooter ul li a:hover{
+    color: rgba(255, 255, 255, 0.9);
+}

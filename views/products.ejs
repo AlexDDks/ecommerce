@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/products.css">
     <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/products.css">
     <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>
     <title>Products</title>
 </head>
 <body>
+
     <%- include('partials/header.ejs')%>
 
-    <section class="products">
-        
-       <% for (const product of products) { %>
+     <section class="products">
+               <% for (const product of products) { %>
              <article class="productBox">
                  <a href="/products/detail/<%= product.id %>">
                      <div class="divProducts">
@@ -32,8 +32,10 @@
              </article>
             <% } %>
     </section>
+
+
     <%- include('partials/footer.ejs')%>
     <%- include('partials/modal.ejs')%>
-
+    <script src="/js/burger.js"></script>
 </body>
 </html>

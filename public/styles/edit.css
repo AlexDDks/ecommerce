@@ -95,7 +95,7 @@ Body .navHide{
     font-size: 20px;
 }
 
-input{
+form input{
     height: 45px;
     border-radius: 5px;
     text-indent: 5px;
@@ -193,92 +193,124 @@ footer .navFooter ul li a:hover{
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Modal */
-.modal{
-    background-color: rgba(18, 18, 18,0.95);
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    transition: all 0.5s;
+@media (max-width: 1023px) {
+    /* Header */
+    header nav .ulNavHeader{
+        display: none;
+    }
+    a{
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    i {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 150ms;
+    }
+    
+    i:hover{
+        color: rgba(255, 255, 255,0.9);
+    }
+    
+    body .navHide{
+        border: 2px red solids;
+        width: 100%;
+        background-color: rgb(18, 18, 18);
+        font-size: 15px;
+        margin-top: 60px;
+        margin-bottom: -70px;
+    }
+    body .navHide.active{
+        display: flex;
+    }
+    .navHide .ulNavHide{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .navHide .ulNavHide li{
+        width: 100%;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        transition: all 150ms;
+    }
+    .navHide .ulNavHide li:hover{
+        background-color: rgb(66, 66, 66);
+    }
+    body header nav .navBarRight{
+        display: flex;
+        width: 40%;
+        height: 60px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .logo img{
+        height: 18px;
+        opacity: 0.9;
+        margin-top: 3px;
+    }
+
+    /* Footer */
+    footer nav ul li{
+        font-size: 14px;
+    }
+    footer nav ul h3{
+        font-size: 16px;
+    }
 }
 
-.modal h2{
-text-align: center;
-margin-top: 130px;
-color: white;
-font-size: 28px;
-font-weight: 400;
-}
+@media (max-width: 767px) {
+    
+    /* Header */
+    body header nav .navBarRight{ /* icons */
+        width: 50%;
+    }
+    .divTop{
+        margin-top: 90px;
+    }
+    /* Section Form */
+    .allForm form{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
-.modal p{
-    width: 80%;
-    text-align: justify;
-    position: absolute;
-    left: 10%;
-    font-size: 23px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    color: white;
-}
+    .allForm form div{
+        width: 100%;
+        margin: auto;
+    }
 
-.contactMe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 60px;
-    color: black;
-    background-color: rgb(255, 255, 255, 0.9);
-    position: absolute;
-    left: 46%;
-    top: 70%;
-    border-radius: 5px;
-    font-size: 20px;    
-}
-.openModal{
-    display: none;
-}
+    form input{
+        width: 100%;
+    }
 
-.labelOpenModal{
-    position: fixed;
-    z-index: 11;
-    top: 3%;
-    right: 5%;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    transition: all 150ms;
-}
+    body section form .divInput{
+        width: 90%;
+    }
 
-.labelOpenModal:hover{
- color: rgba(255, 255, 255, 0.9);
-}
+    body section form .textArea{
+        margin: auto;
+        margin-bottom: 15px;
+    }
 
-.openModal:checked ~ .modal{
-    top:0;
-}
+    body section form .textArea label{
+        margin-left: 2%;
+    }
 
-.closeModal{
-    display: none;
-}
+    body section form .divButton{
+        text-align: center;
+        margin-top: 15px;
+    }
 
-.labelCloseModal{
-    position: absolute;
-    z-index: 150;
-    top: 3%;
-    right: 3%;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.7);
-    transition: all 150ms;
-    border:2px red solid
-}
-
-.labelCloseModal:hover{
-        color: rgba(255, 255, 255, 0.9);
-}
-.closeModal:checked ~ .modal{
-    top:-100vh;
+    /* Footer */
+    footer nav ul li{
+        font-size: 13px;
+    }
+    footer nav ul h3{
+        font-size: 15px;
+    }
 }
