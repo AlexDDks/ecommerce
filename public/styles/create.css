@@ -87,6 +87,10 @@ Body .navHide{
     font-size: 24px;
 }
 
+.divTop p{
+    color:rgba(18, 18, 18, 0.8);
+}
+
 .allForm{
     width: 90%;
     margin:0 auto 0 auto;
@@ -105,6 +109,7 @@ Body .navHide{
 
 label{
     margin-bottom: 15px;
+    color:rgba(18, 18, 18, 0.8);
 }
 
 body section form{
@@ -112,6 +117,10 @@ body section form{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 30px 0 0 0;
+}
+
+body section form .divInputImg{
+    width: 65%;
 }
 
 body section form .divInput, .textArea{
@@ -191,4 +200,145 @@ footer .navFooter ul li a{
 
 footer .navFooter ul li a:hover{
     color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1023px) {
+    /* Header */
+    header nav .ulNavHeader{
+        display: none;
+    }
+    a{
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    i {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 150ms;
+    }
+    
+    i:hover{
+        color: rgba(255, 255, 255,0.9);
+    }
+    
+    body .navHide{
+        width: 100%;
+        background-color: rgb(18, 18, 18);
+        font-size: 15px;
+        margin-top: 60px;
+        margin-bottom: -70px;
+    }
+    body .navHide.active{
+        display: flex;
+    }
+    .navHide .ulNavHide{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .navHide .ulNavHide li{
+        width: 100%;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        transition: all 150ms;
+    }
+    .navHide .ulNavHide li:hover{
+        background-color: rgb(66, 66, 66);
+    }
+    body header nav .navBarRight{
+        display: flex;
+        width: 40%;
+        height: 60px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .logo img{
+        height: 18px;
+        opacity: 0.9;
+        margin-top: 3px;
+    }
+
+    button{
+        margin: 0 5px;
+        font-size: 20px;
+        width: 180px;
+        height: 60px;
+    }
+
+    /* Footer */
+    footer nav ul li{
+        font-size: 14px;
+    }
+    footer nav ul h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    /* Header */
+    body header nav .navBarRight{ /* icons */
+        width: 50%;
+    }
+    .divTop{
+        margin-top: 90px;
+    }
+
+    /* Section Form */
+    .allForm form{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .allForm form div{
+        width: 100%;
+        margin: auto;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    body section form .divInput{
+        width: 90%;
+    }
+
+    body section form .textArea{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    body section form .textArea label{
+        margin-left: 2%;
+    }
+
+    body section form .divButton{
+        text-align: center;
+        margin-top: 15px;
+    }
+    body section form .divInputImg{
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+    .labelFile{
+        padding-bottom: 15px;
+    }
+    .labelFile, .inputFile{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    /* Footer */
+    footer nav ul li{
+        font-size: 13px;
+    }
+    footer nav ul h3{
+        font-size: 15px;
+    }
 }

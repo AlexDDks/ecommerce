@@ -92,12 +92,12 @@
   "finalPrice": 11400
  },
  {
-  "id": 11,
-  "name": "Cellphone 6",
-  "price": 5000,
-  "msi": 12,
-  "discount": 3,
-  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "id": "11",
+  "name": "Iphone X",
+  "price": "6999",
+  "discount": "5",
+  "msi": "12",
+  "description": "Esta es una prueba del Iphone",
   "image": "smartphone.png"
  }
 ]
