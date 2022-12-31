@@ -17,7 +17,6 @@ const controller = {
    },
 
   detail: (req, res) => {
-    
     const id = req.params.id 
     const product = products.find(element => element.id == id)  //
     const { discount, price } = product; 

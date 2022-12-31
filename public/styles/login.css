@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family:'Segoe UI';
+    color:rgba(18, 18, 18, 1);
 }
 
 body{
@@ -17,12 +18,6 @@ li{
 
 a{
     text-decoration: none;
-}
-
-body{
-    background-color: rgb(234, 234, 234);
-    max-width: 2200px;
-    min-width: 355px;
 }
 
 /* Header */
@@ -83,9 +78,8 @@ form{
     margin-top: 130px;
     height: 250px;
     width: 350px;
-    border: 5px rgba(18, 18, 18, 1) solid;
+    box-shadow: 0px 0px 15px 3px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 2px;
 }
 
 form .formContent{
@@ -94,35 +88,43 @@ form .formContent{
 
 form img{
     position: relative;
-    width: 55px;
+    width: 60px;
     right:130px;
-    top:10px;
+    top:15px;
 }
 
 form h2{
-    margin-top: -10px;
+    margin-top: -15px;
     font-weight: 500;
 }
 form .barra{
-    border-radius: 2.5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px black solid;
+    text-indent: 5px;
 }
 
 form .divForm{
     margin-top: 10px;
 }
 form a{
-    color: black;
+    color:rgba(18, 18, 18, 0.9);
+    transition: all 150ms;
 }
 
-body .finalLogo{
-    width:20%;
-    margin-left: 5%;
-    margin-top: 60px;
+form a:hover{
+    color:rgb(18, 18, 18);
 }
 
-body .finalLogo img{
-    width: 300px;
-    opacity: 0.9;
+form div button{
+    width: 80px;
+    height: 35px;
+    border: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -160,14 +162,19 @@ footer .navFooter ul li a:hover{
 }
 
 /* media quereis */
-
 @media (max-width: 1023px) {
-    /* Header */
     header nav .ulNavHeader{
         display: none;
     }
     a{
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.8);
+    }
+    i{
+        color: rgba(255, 255, 255, 0.8);
+        transition: all 150ms;
+    }
+    i:hover{
+        color: rgba(255, 255, 255, 1);
     }
     body .navHide{
         width: 100%;
@@ -231,6 +238,13 @@ footer .navFooter ul li a:hover{
         a{
             color: rgba(255, 255, 255, 0.9);
         }
+        i{
+            color: rgba(255, 255, 255, 0.9);
+            transition: all 150ms;
+        }
+        i:hover{
+            color: rgba(255, 255, 255, 1);
+        }
         body .navHide{
             width: 100%;
             background-color: rgb(18, 18, 18);
@@ -240,7 +254,6 @@ footer .navFooter ul li a:hover{
         }
         body .navHide.active{
             display: flex;
-            /* justify-content: center; */
         }
         .navHide .ulNavHide{
             display: flex;

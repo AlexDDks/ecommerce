@@ -1,14 +1,5 @@
 [
  {
-  "id": 1,
-  "name": "Cellphone 1",
-  "price": 5000,
-  "msi": 12,
-  "discount": 3,
-  "description": "Smartphone, the best",
-  "image": "smartphone.png"
- },
- {
   "id": "2",
   "name": "Laptop prueba",
   "price": "12000",
@@ -70,7 +61,8 @@
   "msi": 6,
   "discount": 5,
   "description": "Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  "image": "laptop.png"
+  "image": "laptop.png",
+  "finalPrice": 11400
  },
  {
   "id": 9,
