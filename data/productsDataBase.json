@@ -1,22 +1,21 @@
 [
  {
   "id": "2",
-  "name": "Laptop prueba",
-  "price": "12000",
-  "discount": "4",
+  "name": "Laptop 1",
+  "price": "9000",
+  "discount": "10",
   "msi": "12",
-  "description": "Esta es una prueba 30 dic 2022 : 4:06 PM",
+  "description": "This is laptop 1",
   "image": "laptop.png"
  },
  {
-  "id": 3,
+  "id": "3",
   "name": "Cellphone 2",
-  "price": 5000,
-  "msi": 3,
-  "discount": 3,
-  "description": "Smartphone Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  "image": "smartphone.png",
-  "finalPrice": 4850
+  "price": "5000",
+  "discount": "5",
+  "msi": "0",
+  "description": "This is the cellphone 2",
+  "image": "smartphone.png"
  },
  {
   "id": 4,
@@ -55,16 +54,6 @@
   "image": "smartphone.png"
  },
  {
-  "id": 8,
-  "name": "Laptop 4",
-  "price": 12000,
-  "msi": 6,
-  "discount": 5,
-  "description": "Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  "image": "laptop.png",
-  "finalPrice": 11400
- },
- {
   "id": 9,
   "name": "Cellphone 5",
   "price": 5000,
@@ -90,6 +79,26 @@
   "discount": "5",
   "msi": "12",
   "description": "Esta es una prueba del Iphone",
-  "image": "smartphone.png"
+  "image": "smartphone.png",
+  "finalPrice": 6649.05
+ },
+ {
+  "id": "111",
+  "name": "12",
+  "price": "12",
+  "discount": "12",
+  "mif": "12",
+  "description": "12",
+  "image": "image-1672799676185",
+  "finalPrice": 10.56
+ },
+ {
+  "id": "1111",
+  "name": "1231",
+  "price": "1312",
+  "discount": "123121",
+  "mif": "12",
+  "description": "11231",
+  "image": "image-1672799765581"
  }
 ]

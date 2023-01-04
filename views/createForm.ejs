@@ -20,32 +20,62 @@
         <form action="/products/create" method="post" enctype="multipart/form-data">
           <div class="divInput">
              <label for="name">Name of the product:</label>
-             <input type="text" class="input" name="name" id="name" placeholder="Name" required>
-          </div>
+             <input type="text" class="input" name="name" id="name" placeholder="Name" value="<%=locals.old && old.name ? old.name : '' %>">
+               <div class="errorMsg">
+                <% if (locals.errors && errors.name) {%>
+                <p><%= errors.name.msg%></p>
+                <% } %>
+             </div>
+            </div>
 
           <div class="divInput">
             <label for="price">Price of the product:</label>
-            <input type="number" class="input" name="price" id="price" placeholder="Price (in number)" required>
+            <input type="number" class="input" name="price" id="price" placeholder="Price (in number)" value="<%=locals.old && old.price ? old.price : '' %>">
+            <div class="errorMsg">
+                <% if (locals.errors && errors.price) {%>
+                <p><%= errors.price.msg%></p>
+                <% } %>
+             </div>
          </div>
 
          <div class="divInput">
             <label for="discount">Discount of the product:</label>
-            <input type="number" class="input" name="discount" id="discount" placeholder="Discount (in number)" required>
+            <input type="number" class="input" name="discount" id="discount" placeholder="Discount (in number)"  value="<%=locals.old && old.discount ? old.discount : '' %>">
+            <div class="errorMsg">
+                <% if (locals.errors && errors.discount) {%>
+                <p><%= errors.discount.msg%></p>
+                <% } %>
+             </div>
          </div>
 
          <div class="divInput">
             <label for="msi">MIF of the product:</label>
-            <input type="number" class="input" name="mif" id="mif" placeholder="MIF (in number)" required>
+            <input type="number" class="input" name="mif" id="mif" placeholder="MIF (in number)"  value="<%=locals.old && old.mif ? old.mif: '' %>">
+            <div class="errorMsg">
+                <% if (locals.errors && errors.mif) {%>
+                <p><%= errors.mif.msg%></p>
+                <% } %>
+             </div>
          </div>
 
          <div class="textArea">
             <label for="description">Description of the product:</label>
-            <textarea name="description" id="description" placeholder="Description" required></textarea>
+            <textarea name="description" id="description" placeholder="<%=locals.old && old.description ? old.description : '' %>"></textarea>
+             <div class="errorMsg">
+                <% if (locals.errors && errors.description) {%>
+                <p><%= errors.description.msg%></p>
+                <% } %>
+             </div>
          </div>
 
          <div class="divInputImg">
-            <label for="image" class="labelFile">Image of the product: (JPG, PNG)</label>
-            <input type="file" class="inputFile" name="image" id="image" accept=".jpg, .png" required>
+            <label for="image" class="labelFile">Image of the product: (JPG, PNG, GIF)</label>
+            <input type="file" class="inputFile" name="image" id="image">
+            <div class="errorMsg">
+               <% if (locals.errors && errors.avatar) {%>
+               <p><%= errors.avatar.msg%></p>
+               <% } %>
+            </div>
          </div>
 
          <div class="divButton">

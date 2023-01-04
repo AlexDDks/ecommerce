@@ -4,6 +4,8 @@ const app = express(); // We invoke the variable express and save the funcionali
 const path = require("path"); // We require from Node the native module path
 const publicPath = path.resolve(__dirname, "./public"); // We save the funcionality of the method resolve in publicPath in order to have a public folder
 
+
+app.use(express.urlencoded({ extended: false })); //Para capturar la info de formularios
 app.use(express.static(publicPath)) // Using the method static we tell to express where the direction of public folder is
 
 

@@ -107,6 +107,11 @@ form label{
     margin-bottom: 15px;
 }
 
+form div .errorMsg p{
+    color:rgba(255, 0, 0, 0.8);
+    font-size: 17px;
+}
+
 body section form{
     display: flex;
     flex-wrap: wrap;
