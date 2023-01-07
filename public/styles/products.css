@@ -137,25 +137,18 @@ body .products{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items:flex-start;
 }
 
 body section .productBox{
     width: 22%;
     margin-top: 30px;
     transition: all 250ms;
+    overflow: hidden;
     position: relative;
     box-shadow: 0 0 8px 3px rgba(47, 47, 47, 0.6);
     border: 2px rgba(47, 47, 47, 0.6) solid;
     border-radius: 5px;
-    height: auto;
-}
-
-body section .productBox:hover{
-    transform: scale(1.025);
-} 
-
-body section .productBox .productInfo{
-    margin: 0px 0px 10px 5px;
 }
 
 body section .productBox h2{
@@ -174,13 +167,22 @@ img{
     width: 100%;
 }
 
+body section article .productInfo{
+    margin-left: 5px;
+}
+
 body section article div .pName{
-    margin-top: 10px;
-    text-align: center;
     color:rgba(18, 18, 18, 0.9);
     font-size: 17px;
     font-weight: 300;
+    height: 0;
+    transition: all 250ms;
     }
+
+body section .productBox:hover .pName{
+        height: 30px;
+        margin-top: 15px;
+}
 
 body section .productBox .divClass{
     width: 40px;
