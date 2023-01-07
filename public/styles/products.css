@@ -142,12 +142,20 @@ body .products{
 body section .productBox{
     width: 22%;
     margin-top: 30px;
-    transition: all 150ms;
-    overflow: hidden;
+    transition: all 250ms;
     position: relative;
     box-shadow: 0 0 8px 3px rgba(47, 47, 47, 0.6);
     border: 2px rgba(47, 47, 47, 0.6) solid;
     border-radius: 5px;
+    height: auto;
+}
+
+body section .productBox:hover{
+    transform: scale(1.025);
+} 
+
+body section .productBox .productInfo{
+    margin: 0px 0px 10px 5px;
 }
 
 body section .productBox h2{
@@ -166,43 +174,31 @@ img{
     width: 100%;
 }
 
-body section article .productInfo{
-    margin-left: 5px;
-}
-
 body section article div .pName{
+    margin-top: 10px;
+    text-align: center;
     color:rgba(18, 18, 18, 0.9);
     font-size: 17px;
     font-weight: 300;
-    height: 0;
-    transition: all 250ms;
     }
 
-body section .productBox:hover{
-    transform: scale(1.025);
-} 
-
-body section .productBox:hover .pName{
-    height: 40px;
-    margin-top: 15px;
+body section .productBox .divClass{
+    width: 40px;
+    position: absolute;
+    right: 0%;
 }
 
 body section .productBox i{
     font-size: 20px;
     color:rgba(18, 18, 18, 0.9);
-    transition: all 350ms;
-    position: absolute;
-    top: 245px;
-    right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 35px;
     height: 35px;
-    text-align: center;
     border: solid 1px;
     border-radius: 50%;
-
+    transition: all 350ms;
 }
 
 body section .productBox:hover i{
@@ -338,21 +334,14 @@ footer .navFooter ul li a:hover{
         margin-top: 15px;
     }
     
+    body section .productBox .divClass{
+        width: 40px;
+        position: absolute;
+        right: 0%;
+    }
+    
     body section .productBox i{
         font-size: 18px;
-        color:rgba(18, 18, 18, 0.9);
-        transition: all 350ms;
-        position: absolute;
-        top: 245px;
-        right: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        border: solid 1px;
-        border-radius: 50%;
     }
 
     /* Footer */
@@ -404,24 +393,6 @@ footer .navFooter ul li a:hover{
         margin-top: 15px;
     }
     
-    body section .productBox i{
-        font-size: 18px;
-        color:rgba(18, 18, 18, 0.9);
-        transition: all 350ms;
-        position: absolute;
-        top: 245px;
-        right: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        border: solid 1px;
-        border-radius: 50%;
-    
-    }
- 
     /* Footer */
     footer nav ul li{
         font-size: 13px;

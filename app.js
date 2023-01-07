@@ -4,18 +4,19 @@ const app = express(); // We invoke the variable express and save the funcionali
 const path = require("path"); // We require from Node the native module path
 const publicPath = path.resolve(__dirname, "./public"); // We save the funcionality of the method resolve in publicPath in order to have a public folder
 
+const session = require("express-session")
 
+app.use(session({secret: "Secret!!!"}))
 app.use(express.urlencoded({ extended: false })); //Para capturar la info de formularios
 app.use(express.static(publicPath)) // Using the method static we tell to express where the direction of public folder is
 
-
 app.set('view engine', 'ejs'); // We are using the EJS view engine, so we tell it to Express
 
-// POST lines
+// POST obligated lines
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-//PUT-DELETE lines
+//PUT-DELETE obligated lines
 const methodOverride = require('method-override')
 app.use(methodOverride('_method'))
 
